@@ -1,12 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Virtual Painter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px #00000070;
+        }
+
+        .video-container {
+            background: #ffffff;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video-container img {
+            border-radius: 10px;
+            border: 2px solid #3498db;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h2 style="text-align:center;">Virtual Painter using Flask + OpenCV + MediaPipe</h2>
-    <div style="display: flex; justify-content: center;">
-        <img src="{{ url_for('video') }}" width="800">
+    <h2>🎨 Virtual Painter with Flask, OpenCV & MediaPipe 🖐️</h2>
+    <div class="video-container">
+        <img src="{{ url_for('video') }}" width="800" alt="Live Drawing Canvas">
     </div>
 </body>
 </html>
