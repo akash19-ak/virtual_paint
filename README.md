@@ -15,18 +15,16 @@ This is a computer vision project that turns your hand into a virtual paintbrush
 
 ---
 
-## 📷 Demo
-
-https://user-images.githubusercontent.com/your_video_link.mp4 *(Add your screen recording here if available)*
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Built With
 
-- **Python 3**
-- **OpenCV** – for capturing webcam and drawing
-- **MediaPipe** – for real-time hand detection and landmark tracking
-- **NumPy** – for managing the canvas as an image array
+- **Flask** – Backend web framework
+- **OpenCV** – Webcam input & image processing
+- **MediaPipe** – Hand tracking
+- **NumPy** – For drawing canvas array
+- **HTML5 / CSS3** – Styled frontend with canvas preview
 
 ---
 
@@ -35,7 +33,7 @@ https://user-images.githubusercontent.com/your_video_link.mp4 *(Add your screen 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/virtual-painter-hand-gestures.git
+git clone https://github.com/akash19-ak/virtual_paint
 cd virtual-painter-hand-gestures
 ```
 
@@ -49,12 +47,16 @@ pip install opencv-python mediapipe numpy
 
 3. **Run the application**
 
-```bash
-python virtual_painter.py
-```
+Step 1: Install Required Python Libraries
 
-> Press `ESC` to exit the app.
 
+pip install flask opencv-python mediapipe numpy
+
+
+
+Step 2: Run the App
+
+python app.py
 ---
 
 ## ✋ How to Use
@@ -69,16 +71,6 @@ python virtual_painter.py
 
 ---
 
-## 📁 File Structure
-
-```
-virtual-painter/
-├── virtual_painter.py   # Main application script
-├── README.md            # Project documentation
-```
-
----
-
 ## 🙋‍♂️ Future Improvements
 
 - Add **save drawing to file** option
@@ -88,9 +80,6 @@ virtual-painter/
 
 ---
 
-## 📸 Screenshot
-
-*(Add a screenshot here of your application running)*
 
 ---
 
@@ -101,6 +90,4 @@ virtual-painter/
 
 ---
 
-## 📜 License
 
-This project is open-source and free to use under the [MIT License](LICENSE).
